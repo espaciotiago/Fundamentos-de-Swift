@@ -13,12 +13,14 @@
 		29AC5E022CC19D7A0068F36B /* Conditionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Conditionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		29AC5E032CC19E3B0068F36B /* Functions.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Functions.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		29AC5E042CC1A2CB0068F36B /* Optionals.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Optionals.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		29AC5E052CC1A7FB0068F36B /* ArraysAndSets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ArraysAndSets.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		29AC5DF82CC1937B0068F36B = {
 			isa = PBXGroup;
 			children = (
+				29AC5E052CC1A7FB0068F36B /* ArraysAndSets.playground */,
 				29AC5E042CC1A2CB0068F36B /* Optionals.playground */,
 				29AC5E032CC19E3B0068F36B /* Functions.playground */,
 				29AC5E022CC19D7A0068F36B /* Conditionals.playground */,
