@@ -10,7 +10,7 @@ import Foundation
 public class AdvancedStudent: Student {
     let extraPoints: Double
     
-    public init(name: String, age: Int, email: String, subjects: [Subject], scores: [Double], extraPoints: Double) {
+    public init(name: String, age: Int, email: String, subjects: [Subject] = [], scores: [Double] = [], extraPoints: Double) {
         self.extraPoints = extraPoints
         super.init(name: name, age: age, email: email, subjects: subjects, scores: scores)
     }

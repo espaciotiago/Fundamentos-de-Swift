@@ -20,50 +20,65 @@ public protocol Managble {
 
 public class StudentsManager: Managble {
 
-    let students: [Student]
+    var students: [Student]
     
-    init() {
+    public init() {
         students = [Student]()
     }
     
     public func insertStudent(_ student: Student) {
-        /* TODO: Ejercicio
-         Implementar esta función
-         */
+        students.append(student)
     }
     
     public func asignSubjectToStudent(subject: Subject, score: Double, student: Student) {
-        /* TODO: Ejercicio
-         Implementar esta función.
-         
-         Tip: Crea un metodo en la clase Student que agregue una materia a su lista.
-         (Puede que tengas que modificar más de una cosa en esa clase)
-         */
+        for s in students {
+            if student.email.elementsEqual(s.email) {
+                s.assignSubject(subject: subject, score: score)
+            }
+        }
     }
     
     public func generateStudentsReport() {
-        /* TODO: Ejercicio
-         Implementar esta función. Debe imprimir la lista de la información de todos los estudiantes y sus respectivas materias.
-         */
+        for student in students {
+            print(student.studentDescription())
+        }
     }
     
+    // Filter
     public func getApprovedStudents() -> [Student] {
-        return []
+        return students.filter { student in
+            student.isApproved()
+        }
     }
     
+    // Filter
     public func getReprobedStudents() -> [Student] {
-        return []
+        return students.filter { student in
+            !student.isApproved()
+        }
     }
     
+    // Map
     public func getAverages() -> [Double] {
-        return []
+        return students.map { student in
+            student.getAverageScore()
+        }
     }
     
+    // Reduce
     public func getTotalAverages() -> Double {
-        return 0
+        let averages = getAverages()
+        let sum = averages.reduce(0.0, +)
+        return sum / Double(averages.count)
     }
     
+    // Reduce into
     public func getCoursedSubjects() -> Set<Subject> {
-        return Set<Subject>()
+        let subjectsSet = students.reduce(into: Set<Subject>()) { result, student in
+            for subject in student.subjects {
+                result.insert(subject)
+            }
+        }
+        return subjectsSet
     }
 }

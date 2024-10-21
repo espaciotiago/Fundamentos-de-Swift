@@ -15,7 +15,7 @@ public class Student: Aprobable, Assignable {
     var subjects: [Subject]
     var scores: [Double]
     
-    public init(name: String, age: Int, email: String, subjects: [Subject], scores: [Double]) {
+    public init(name: String, age: Int, email: String, subjects: [Subject] = [], scores: [Double] = []) {
         self.name = name
         self.age = age
         self.email = email
@@ -64,5 +64,13 @@ public class Student: Aprobable, Assignable {
     public func assignSubject(subject: Subject, score: Double) {
         self.subjects.append(subject)
         self.scores.append(score)
+    }
+    
+    public func getAverageScore() -> Double {
+        var sum: Double = 0
+        for score in scores {
+            sum += score
+        }
+        return sum / Double(scores.count)
     }
 }
