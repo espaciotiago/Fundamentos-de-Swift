@@ -8,6 +8,7 @@
 import Foundation
 
 public struct Subject {
+    
     let name: String
     let teacherName: String
     let minimunScore: Double
@@ -25,9 +26,9 @@ public struct Subject {
     public func subjectDescription() -> String {
         """
         ---------------------------------------------
-        # Materia: \(name)
-        # Profesor: \(teacherName)
-        # Puntaje minimo para pasar: \(minimunScore)
+        ## Materia: \(name)
+        ## Profesor: \(teacherName)
+        ## Puntaje minimo para pasar: \(minimunScore)
         """
     }
 }
