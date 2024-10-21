@@ -9,7 +9,7 @@ import Foundation
 
 public protocol Managble {
     func insertStudent(_ student: Student)
-    func asignSubjectToStudent(subject: Subject, student: Student)
+    func asignSubjectToStudent(subject: Subject, score: Double, student: Student)
     func generateStudentsReport()
     func getApprovedStudents() -> [Student]
     func getReprobedStudents() -> [Student]
