@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Student {
+public class Student: Aprobable {
     let name: String
     let age: Int
     let email: String

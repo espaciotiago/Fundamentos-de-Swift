@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct Subject {
-    
+public struct Subject: Hashable {
+
     let name: String
     let teacherName: String
     let subjectLevel: SubjectLevel
