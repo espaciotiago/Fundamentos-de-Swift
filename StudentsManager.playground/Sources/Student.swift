@@ -7,12 +7,13 @@
 
 import Foundation
 
-public class Student: Aprobable {
+public class Student: Aprobable, Assignable {
+    
     let name: String
     let age: Int
     let email: String
-    let subjects: [Subject]
-    let scores: [Double]
+    var subjects: [Subject]
+    var scores: [Double]
     
     public init(name: String, age: Int, email: String, subjects: [Subject], scores: [Double]) {
         self.name = name
@@ -58,5 +59,10 @@ public class Student: Aprobable {
         
         let percentage = (Double(approvedSubjectsCount) / Double(subjects.count)) * 100
         return percentage > 60
+    }
+    
+    public func assignSubject(subject: Subject, score: Double) {
+        self.subjects.append(subject)
+        self.scores.append(score)
     }
 }
