@@ -16,12 +16,14 @@
 		29AC5E052CC1A7FB0068F36B /* ArraysAndSets.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ArraysAndSets.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		29D94E742CC5C8E500C4CBCE /* Dictionaries.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dictionaries.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		29D94E752CC5DF9500C4CBCE /* Loops.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Loops.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		29D94E762CC68B7C00C4CBCE /* StudentsManager.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StudentsManager.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		29AC5DF82CC1937B0068F36B = {
 			isa = PBXGroup;
 			children = (
+				29D94E762CC68B7C00C4CBCE /* StudentsManager.playground */,
 				29D94E752CC5DF9500C4CBCE /* Loops.playground */,
 				29D94E742CC5C8E500C4CBCE /* Dictionaries.playground */,
 				29AC5E052CC1A7FB0068F36B /* ArraysAndSets.playground */,
