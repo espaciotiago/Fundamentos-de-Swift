@@ -32,7 +32,7 @@ public class StudentsManager: Managble {
          */
     }
     
-    public func asignSubjectToStudent(subject: Subject, student: Student) {
+    public func asignSubjectToStudent(subject: Subject, score: Double, student: Student) {
         /* TODO: Ejercicio
          Implementar esta función.
          
