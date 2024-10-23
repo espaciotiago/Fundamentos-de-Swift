@@ -7,13 +7,13 @@
 
 import Foundation
 
-enum ManagerError: Error {
+public enum ManagerError: Error {
     case studentNotAddedError
     case subjectNotAssignedError
     case reportNotFoundError
     case maxStudentsReachedError(max: Int)
     
-    func getErrorDescription() -> String {
+    public func getErrorDescription() -> String {
         switch self {
         case .studentNotAddedError:
             return "El estudiante no se pudo agregar"
