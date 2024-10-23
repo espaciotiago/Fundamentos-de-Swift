@@ -37,3 +37,5 @@ manager.asignSubjectToStudent(subject: biology, score: 40, student: maria)
 manager.generateStudentsReport()
 let avergaes = manager.getAverages()
 
+let set = manager.getCoursedSubjects()
+
