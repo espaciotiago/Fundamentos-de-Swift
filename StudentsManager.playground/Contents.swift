@@ -13,7 +13,7 @@ let maria = Student(name: "Maria", age: 15, email: "maria@gmail.com")
 
 
 // MARK: - Students Manager
-let manager = StudentsManager()
+let manager = StudentsManager(maxStudents: 3)
 manager.insertStudent(juan)
 manager.insertStudent(jhon)
 manager.insertStudent(maria)
@@ -35,6 +35,6 @@ manager.asignSubjectToStudent(subject: spanish, score: 81, student: maria)
 manager.asignSubjectToStudent(subject: biology, score: 40, student: maria)
 
 manager.generateStudentsReport()
-let avergaes = manager.getAverages()
 
+let avergaes = manager.getAverages()
 let set = manager.getCoursedSubjects()
