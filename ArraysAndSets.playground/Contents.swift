@@ -1,7 +1,7 @@
 /* MARK: - Arrays (Listas)
  - Son ordenados
  - Permiten tener duplicados
- - Se acceden por incdice (Posición en la que se encuentra el elemento. p.ej 0, 1, 2, 3...n)
+ - Se acceden por indice (Posición en la que se encuentra el elemento. p.ej 0, 1, 2, 3...n)
  */
 // Declaración explicita
 let fruitsExplicitArray: [String] = ["Manzana", "Naranja", "Pera", "Piña"]
@@ -10,11 +10,11 @@ let fruitsExplicitEmptyArray = [String]()
 // Declaración implicita
 var fruitsArray = ["Manzana", "Naranja", "Pera", "Manzana"]
 let fruitsEmptyArray: [String] = []
+let totalOfFruits = fruitsArray.count
 
 // Acceder a un elemento
 let firstFruit = fruitsArray[0]
 let secondFruit = fruitsArray[1]
-let totalOfFruits = fruitsArray.count
 let lastFruit = fruitsArray[totalOfFruits - 1] // count para contar el total de elementos
 
 // Agregar un elementos
@@ -73,8 +73,8 @@ animalsSet.removeAll()
 print(animalsSet)
 
 // MARK: - Operaciones interesantes de conjuntos
-let setOne = Set([1, 2, 3, 4, 5])
-let setTwo = Set([2, 3, 4, 5, 6])
+let setOne = Set(["Juan", "Maria", "Andrea", "Jhon", "Camilo"])
+let setTwo = Set(["Maria", "Andrea", "Camilo", "Andres", "Rick"])
 
 // Devuelve un nuevo set que contiene todos los elementos de ambos sets.
 let union = setOne.union(setTwo)

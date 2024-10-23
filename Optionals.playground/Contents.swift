@@ -1,5 +1,5 @@
 
-// MARK: -Datos opcionales
+// MARK: - Datos opcionales
 var intOptional: Int? = nil
 intOptional = 10
 

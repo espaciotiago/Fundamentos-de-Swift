@@ -10,5 +10,5 @@ let numberDouble = 10.0
 // Cadena de caracteres
 let string = "Hello, World!"
 
-// Valor booleano (verdadero o flaso)
+// Valor booleano (verdadero o falso)
 let bool = true
